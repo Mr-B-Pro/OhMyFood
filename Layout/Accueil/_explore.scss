@@ -1,0 +1,36 @@
+/* SECTION EXPLORE */
+.explore{
+    text-align: center;
+    padding: 50px 0 70px 0;
+    background-color: #f1f1f191;
+
+    &__h2 {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    &__p {
+        font-size: 22px;
+        font-weight: 300;
+        margin: 0;
+        padding: 18px 0 38px 0;
+    }
+
+    &__button{
+        font-size: 19px;
+        font-weight: 500;
+        margin: 0;
+        padding: 19px 28px;
+        color: white;
+        background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+        border: none;
+        border-radius: 32px 32px;
+        @include base-shadow;
+        transition: transform 250ms;
+    }
+
+    &__button:hover{
+        @include base-zoom;
+    }
+}

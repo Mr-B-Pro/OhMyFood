@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,SAAS,AAAA,CACL,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,GAAG,CACnB,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,OAAO,CAAE,IAAI,CACb,GAAG,CAAE,IAAI,CACT,gBAAgB,CAAE,OAAO,CAW5B,AAlBD,AASI,SATK,CASL,gBAAgB,AAAA,CACZ,SAAS,CAAE,IAAI,CAClB,AAEA,AAAD,aAAK,AAAA,CACD,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CAChB,MAAM,CAAE,CAAC,CACZ",
+    "sources": [
+        "../../Layout/adress.scss"
+    ],
+    "names": [],
+    "file": "adress.min.css"
+}

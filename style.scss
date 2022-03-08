@@ -1,0 +1,82 @@
+// MIXINS
+@import "./Utils/_box-shadow.scss";
+@import "./Utils/_effects.scss";
+
+// VARIABLES
+@import "./Utils/variables";
+
+// BODY & WHOLE PAGE  & GOOGLE FONTS
+@import "./Base/_base.scss";
+
+// HEADER
+@import "./Layout/_header.scss";
+
+// ADDRESS
+@import "./Layout/Accueil/_adress.scss";
+
+// SECTION EXPLORE
+@import "./Layout/Accueil/_explore.scss";
+
+// SECTION FUNCTIONING
+.functioning {
+  padding: 60px 40px 80px 40px;
+}
+.functioning__h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 600;
+}
+.functioning__ol {
+  margin: 30px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 32px;
+}
+.functioning__numbers {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    color: white;
+    width: 28px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: -10px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: -13px;
+  }
+.fa-mobile-screen-button {
+    padding: 0px 30px 0 26px;
+  color: #7e7e7e;
+  font-size: 21px;
+}
+.fa-list {
+    padding: 0px 30px 0 26px;
+  color: #7e7e7e;
+  font-size: 21px;
+}
+.fa-store {
+    padding: 0px 30px 0 26px;
+  color: $primary-color;
+  font-size: 21px;
+}
+.functioning__li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 80px 30px 0;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 20px 20px;
+  @include base-shadow;
+  transition: transform 250ms;
+}
+.functioning__li:hover {
+  @include base-zoom;
+  background-color: #9356dc30;
+}
+
