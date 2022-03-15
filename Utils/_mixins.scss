@@ -1,0 +1,50 @@
+// MIXINS FULL PROJECT
+// ZOOM EFFECTS
+@mixin base-zoom {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+// GRADIENTS
+@mixin gradient-button {
+  background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+}
+@mixin gradient-heart {
+  background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+}
+// BOX SHADOW
+@mixin base-shadow {
+  box-shadow: 0px 3px 1rem 1px #00000030;
+}
+
+// MIXINS ACCUEILS
+// H2 ACCUEIL SMARTPHONE
+@mixin h2-accueil-smartphone {
+  font-size: 28px;
+  font-weight: 600;
+}
+// H3 ACCUEIL SMARTPHONE
+@mixin h3-accueil-smartphone {
+  font-size: 21px;
+  font-weight: 600;
+}
+// P ACCUEIL SMARTPHONE
+@mixin p-accueil-smartphone {
+    font-size: 20px;
+  font-weight: 300;
+}
+// 
+// H2 ACCUEIL TABLETTE
+@mixin h2-accueil-tablette {
+  font-size: 28px;
+  font-weight: 600;
+}
+// H3 ACCUEIL TABLETTE
+@mixin h3-accueil-tablette {
+  font-size: 21px;
+  font-weight: 600;
+}
+// P ACCUEIL TABLETTE
+@mixin p-accueil-tablette {
+    font-size: 20px;
+  font-weight: 300;
+}

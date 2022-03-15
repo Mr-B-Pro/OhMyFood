@@ -1,18 +1,18 @@
 /* SECTION EXPLORE */
+// IPHONE 8
 .explore{
     text-align: center;
     padding: 50px 0 70px 0;
-    background-color: #f1f1f191;
+    background-color: $primary-background-color;
 
     &__h2 {
-        font-size: 28px;
-        font-weight: 600;
+        @include h2-accueil-smartphone;
         margin: 0;
     }
 
     &__p {
         font-size: 22px;
-        font-weight: 300;
+        font-weight: 400;
         margin: 0;
         padding: 18px 0 38px 0;
     }
@@ -21,9 +21,9 @@
         font-size: 19px;
         font-weight: 500;
         margin: 0;
-        padding: 19px 28px;
+        padding: 20px 30px;
         color: white;
-        background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+        @include gradient-button;
         border: none;
         border-radius: 32px 32px;
         @include base-shadow;
@@ -34,3 +34,10 @@
         @include base-zoom;
     }
 }
+
+  // TABLETTE
+  @media screen and (min-width: 768px){
+    .explore__button{
+        border-radius: 10px 10px;
+    }
+  }

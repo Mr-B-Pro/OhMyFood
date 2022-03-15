@@ -1,21 +1,28 @@
 // MIXINS
-@import "./Utils/_box-shadow.scss";
-@import "./Utils/_effects.scss";
+@import "./Utils/mixins";
 
 // VARIABLES
 @import "./Utils/variables";
 
+
+// ACCUEIL
 // BODY & WHOLE PAGE  & GOOGLE FONTS
-@import "./Base/_base.scss";
+@import "./Base/_base";
 
-// HEADER
-@import "./Layout/_header.scss";
+// SECTION HEADER
+@import "./Layout/Full Project/header";
 
-// ADDRESS
-@import "./Layout/Accueil/_adress.scss";
+// SECTION ADDRESS
+@import "./Layout/Accueil/_adress";
 
 // SECTION EXPLORE
-@import "./Layout/Accueil/_explore.scss";
+@import "./Layout/Accueil/_explore";
 
 // SECTION FUNCTIONING
 @import "./Layout/Accueil/functioning";
+
+// SECTION CHOOSE RESTAURANTS
+@import "./Layout/Accueil/choose-restaurants";
+
+// FOOTER
+@import"./Layout/Full Project/footer";

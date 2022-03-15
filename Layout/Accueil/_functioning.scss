@@ -1,15 +1,15 @@
 // SECTION FUNCTIONING
+// IPHONE 8
 .functioning {
-    padding: 60px 40px 80px 40px;
+    padding: 60px 30px 90px 30px;
   
     &__h2 {
       margin: 0;
-      font-size: 23px;
-      font-weight: 600;
+     @include h2-accueil-smartphone;
     }
   
     &__ol {
-      margin: 30px 0 0 0;
+      margin: 35px 0 0 0;
       padding: 0;
       display: flex;
       flex-direction: column;
@@ -22,11 +22,11 @@
       justify-content: center;
       background-color: $primary-color;
       color: white;
-      width: 28px;
-      padding: 5px;
+      width: 30px;
+      padding: 6px;
       border-radius: 50%;
       margin-left: -10px;
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 400;
       margin-left: -13px;
     }
@@ -35,12 +35,12 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      padding: 30px 80px 30px 0;
-      font-size: 18px;
-      font-weight: 500;
+      padding: 30px 40px 30px 0;
+      font-size: 19px;
+      font-weight: 600;
       border: none;
-      background-color: #f1f1f1;
-      border-radius: 20px 20px;
+      background-color: $primary-background-color;
+      border-radius: 25px 25px;
       @include base-shadow;
       transition: transform 250ms;
     }
@@ -52,18 +52,41 @@
   
   }
   .fa-mobile-screen-button {
-      padding: 0px 30px 0 26px;
+      padding: 0px 25px 0 24px;
     color: #7e7e7e;
-    font-size: 21px;
+    font-size: 23px;
   }
   .fa-list {
-      padding: 0px 30px 0 26px;
+    padding: 0px 25px 0 24px;
     color: #7e7e7e;
-    font-size: 21px;
+    font-size: 23px;
   }
   .fa-store {
-      padding: 0px 30px 0 26px;
+    padding: 0px 25px 0 24px;
     color: $primary-color;
-    font-size: 21px;
+    font-size: 23px;
   }
-  
+
+  // TABLETTE
+  @media screen and (min-width: 768px){
+    .functioning__h2 {
+      text-align: center;
+    }
+    .functioning__ol{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 60px 0 0 0;
+      gap: 36px;
+    }
+    .functioning__li{
+      border-radius: 10px 10px;
+    }
+  }
+
+  // TABLETTE
+  @media screen and (min-width: 1280px){
+    .functioning__ol{
+      justify-content: space-around;
+    }
+  }

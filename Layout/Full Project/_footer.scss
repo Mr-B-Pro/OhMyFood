@@ -1,0 +1,67 @@
+/* SECTION FOOTER */
+// IPHONE 8
+.footer {
+  padding: 20px 30px 55px 30px;
+  color: white;
+  background-color: #000000c2;
+
+  &__h3 {
+    font-family: "Shrikhand", cursive;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+    padding: 25px 0 18px 0;
+  }
+
+  &__i-p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding-top: 15px;
+  }
+}
+
+.fa-utensils {
+  font-size: 19px;
+}
+.fa-handshake-angle {
+  font-size: 16px;
+  margin-left: -4px;
+}
+.footer__p-icons {
+  font-size: 23px;
+  font-weight: 500;
+  margin: 0;
+  padding-left: 20px;
+}
+.footer__p-noIcons {
+  font-size: 23px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 15px;
+}
+
+// TABLETTE
+@media screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+
+    &__desktop {
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+  }
+  }  
+}
+
+// DESKTOP
+@media screen and (min-width: 1280px) {
+    .footer__h3{
+        padding: 25px 0 20px 0;
+    }
+    .footer__desktop{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
