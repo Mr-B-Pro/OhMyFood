@@ -1,92 +1,92 @@
 // SECTION FUNCTIONING
 // IPHONE 8
 .functioning {
-    padding: 60px 30px 90px 30px;
-  
-    &__h2 {
-      margin: 0;
-     @include h2-accueil-smartphone;
-    }
-  
-    &__ol {
-      margin: 35px 0 0 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      gap: 32px;
-    }
-  
-    &__numbers {
-      display: flex;
-      justify-content: center;
-      background-color: $primary-color;
-      color: white;
-      width: 30px;
-      padding: 6px;
-      border-radius: 50%;
-      margin-left: -10px;
-      font-size: 15px;
-      font-weight: 400;
-      margin-left: -13px;
-    }
-  
-    &__li {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 30px 40px 30px 0;
-      font-size: 19px;
-      font-weight: 600;
-      border: none;
-      background-color: $primary-background-color;
-      border-radius: 25px 25px;
-      @include base-shadow;
-      transition: transform 250ms;
-    }
-  
-    &__li:hover {
-      @include base-zoom;
-      background-color: #9356dc30;
-    }
-  
-  }
-  .fa-mobile-screen-button {
-      padding: 0px 25px 0 24px;
-    color: #7e7e7e;
-    font-size: 23px;
-  }
-  .fa-list {
-    padding: 0px 25px 0 24px;
-    color: #7e7e7e;
-    font-size: 23px;
-  }
-  .fa-store {
-    padding: 0px 25px 0 24px;
-    color: $primary-color;
-    font-size: 23px;
+  padding: 60px 30px 90px 30px;
+
+  &__h2 {
+    margin: 0;
+    @include h2-iphone-accueil;
   }
 
-  // TABLETTE
-  @media screen and (min-width: 768px){
-    .functioning__h2 {
-      text-align: center;
-    }
-    .functioning__ol{
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 60px 0 0 0;
-      gap: 36px;
-    }
-    .functioning__li{
-      border-radius: 10px 10px;
-    }
+  &__ol {
+    margin: 35px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 32px;
   }
 
-  // TABLETTE
-  @media screen and (min-width: 1280px){
-    .functioning__ol{
-      justify-content: space-around;
-    }
+  &__numbers {
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    color: white;
+    width: 30px;
+    padding: 6px;
+    border-radius: 50%;
+    margin-left: -10px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: -13px;
   }
+
+  &__li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 40px 30px 0;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    background-color: $primary-background-color;
+    border-radius: 25px 25px;
+    @include base-shadow;
+    transition-duration: 250ms;
+    cursor: pointer;
+  }
+
+  &__li:hover {
+    @include base-zoom;
+    background-color: #9356dc30;
+  }
+}
+.fa-mobile-screen-button {
+  padding: 0px 25px 0 24px;
+  color: #7e7e7e;
+  font-size: 23px;
+}
+.fa-list {
+  padding: 0px 25px 0 24px;
+  color: #7e7e7e;
+  font-size: 23px;
+}
+.fa-store {
+  padding: 0px 25px 0 24px;
+  color: $primary-color;
+  font-size: 23px;
+}
+
+// TABLETTE
+@media screen and (min-width: 768px) {
+  .functioning__h2 {
+    text-align: center;
+  }
+  .functioning__ol {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px 0 0 0;
+    gap: 36px;
+  }
+  .functioning__li {
+    border-radius: 10px 10px;
+  }
+}
+
+// TABLETTE
+@media screen and (min-width: 1280px) {
+  .functioning__ol {
+    justify-content: space-around;
+  }
+}

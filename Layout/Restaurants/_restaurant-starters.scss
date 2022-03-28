@@ -1,0 +1,182 @@
+// SECTION RESTAURANT STARTERS
+// IPHONE 8
+.starters {
+  background-color: $secondary-background-color;
+  padding: 40px 25px 20px 25px;
+
+  &__h3 {
+    position: relative;
+    margin: 0;
+    @include h3-iphone-menu;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 28px;
+      height: 4px;
+      width: 52px;
+      background-color: $tertiary-color;
+    }
+  }
+}
+.restaurantStarters {
+  background-color: white;
+  margin-top: 25px;
+  padding: 0 0 0 20px;
+  border-radius: 18px 18px;
+  @include base-shadow;
+  transition: all 450ms;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  animation: animated-appearance 950ms;
+
+  &:hover {
+    @include base-zoom;
+    overflow: visible;
+    margin-right: 95px;
+    border-radius: 18px 0 0 18px;
+    cursor: pointer;
+    i {
+      animation: check-animation 450ms;
+    }
+  }
+}
+.restaurantStartersTxtContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &__h4 {
+    margin: 0;
+    @include h4-iphone-menu;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__p {
+    margin: 0;
+    @include p-iphone-menu;
+    padding-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.restaurantStarters__price {
+  margin: 0;
+  @include price-iphone-menu;
+  margin-left: auto;
+  padding: 34px 20px 0 0;
+}
+
+.restaurant-menuAnimation {
+  background-color: $tertiary-color;
+  margin-right: -84px;
+  padding: 30px 25px;
+  border-radius: 0 18px 18px 0;
+  @include base-shadow;
+}
+.fa-circle-check {
+  font-size: 34px;
+  color: white;
+}
+
+// TABLETTE
+@media screen and (min-width: 768px) {
+  .starters {
+    padding: 55px 25px 0px 25px;
+
+    &__h3 {
+      text-align: center;
+      @include h3-tablet-menu;
+      padding-bottom: 10px;
+      border-bottom: 6px solid $tertiary-color;
+
+      &::after {
+        background-color: $secondary-background-color;
+      }
+    }
+  }
+  .restaurantStarters {
+    margin-top: 35px;
+    padding: 0px 25px 0px 25px;
+
+    &:hover {
+      margin-right: 114px;
+      border-radius: 18px 0 0 18px;
+    }
+  }
+  .restaurantStartersTxtContainer__h4 {
+    @include h4-tablet-menu;
+  }
+  .restaurantStartersTxtContainer__p {
+    @include p-tablet-menu;
+  }
+  .restaurantStarters__price {
+    @include price-tablet-menu;
+    padding: 34px 30px 0 0;
+  }
+  .restaurant-menuAnimation {
+    margin-right: -124px;
+    padding: 38px 30px;
+    @include base-shadow;
+  }
+  .fa-circle-check {
+    font-size: 38px;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1280px) {
+  .starters {
+    padding: 20px 25px 0px 45px;
+
+    &__h3 {
+      text-align: center;
+      @include h3-desktop-menu;
+      padding-top: 20px;
+      border-top: 8px solid $tertiary-color;
+      padding-bottom: 0px;
+      border-bottom: none;
+    }
+  }
+  .restaurantStartersContainer {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+  }
+  .restaurantStarters {
+    margin-top: 35px;
+    padding: 0px 25px 0px 25px;
+    border-radius: 10px 10px;
+
+    &:hover {
+      margin-right: 160px;
+      border-radius: 10px 0 0 10px;
+    }
+  }
+  .restaurantStartersTxtContainer__h4 {
+    @include h4-desktop-menu;
+  }
+  .restaurantStartersTxtContainer__p {
+    @include p-desktop-menu;
+  }
+  .restaurantStarters__price {
+    @include price-desktop-menu;
+    padding: 120px 25px 0 0;
+  }
+  .restaurant-menuAnimation {
+    margin-right: -166px;
+    padding: 50px 40px;
+    @include base-shadow;
+  }
+  .fa-circle-check {
+    font-size: 60px;
+  }
+}

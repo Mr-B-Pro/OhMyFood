@@ -1,0 +1,39 @@
+// CHECK ANIMATION
+@keyframes check-animation {
+  0% {
+    transform: rotate(-280deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+// ANIMATED APPEARANCE 
+@keyframes animated-appearance {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// // ANIMATED LOADING PAGE
+@keyframes loading-page {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,28 +1,28 @@
 /* ADDRESS */
 // IPHONE 8
-.location{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0 20px 0;
-    gap: 22px;
-    background-color: #ededed;
-    
-    .fa-location-dot{
-        font-size: 20px;
-    }
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  gap: 22px;
+  background-color: #ededed;
 
-    &__h2{
-        font-size: 20px;
-        font-weight: 500;
-        margin: 0;
-    }
+  .fa-location-dot {
+    font-size: 20px;
+  }
+
+  &__h2 {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+  }
 }
 
-  // TABLETTE
-  @media screen and (min-width: 768px){
-    .location__h2 {
-        font-size: 22px;
-    }
+// TABLETTE
+@media screen and (min-width: 768px) {
+  .location__h2 {
+    font-size: 22px;
   }
+}

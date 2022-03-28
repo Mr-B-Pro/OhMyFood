@@ -4,47 +4,192 @@
   transform: scale(1.03);
   opacity: 0.9;
 }
+
+// HEART EFFECTS
+@mixin heart-filled {
+  position: absolute;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition-duration: 250ms;
+  @include gradient-heart;
+}
+@mixin heart-hover {
+  @include base-zoom;
+  opacity: 1;
+}
+@mixin heart-transparent {
+  position: absolute;
+}
+
 // GRADIENTS
 @mixin gradient-button {
-  background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+  background: linear-gradient(
+    to bottom right,
+    $secondary-color,
+    $primary-color
+  );
 }
 @mixin gradient-heart {
-  background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+  background-image: linear-gradient(
+    to bottom right,
+    $secondary-color,
+    $primary-color
+  );
 }
+
 // BOX SHADOW
 @mixin base-shadow {
   box-shadow: 0px 3px 1rem 1px #00000030;
 }
 
-// MIXINS ACCUEILS
-// H2 ACCUEIL SMARTPHONE
-@mixin h2-accueil-smartphone {
+// ACCUEIL
+// H2 ACCUEIL IPHONE
+@mixin h2-iphone-accueil {
   font-size: 28px;
   font-weight: 600;
 }
+// H3 ACCUEIL IPHONE
+@mixin h3-iphone-accueil {
+  font-size: 21px;
+  font-weight: 600;
+}
+// P ACCUEIL IPHONE
+@mixin p-iphone-accueil {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+// H2 ACCUEIL SMARTPHONE
+@mixin h2-smartphone-accueil {
+  font-size: 32px;
+  font-weight: 600;
+}
 // H3 ACCUEIL SMARTPHONE
-@mixin h3-accueil-smartphone {
+@mixin h3-smartphone-accueil {
   font-size: 21px;
   font-weight: 600;
 }
 // P ACCUEIL SMARTPHONE
-@mixin p-accueil-smartphone {
-    font-size: 20px;
+@mixin p-smartphone-accueil {
+  font-size: 20px;
   font-weight: 300;
 }
-// 
-// H2 ACCUEIL TABLETTE
-@mixin h2-accueil-tablette {
-  font-size: 28px;
+
+// H2 ACCUEIL TABLET
+@mixin h2-tablet-accueil {
+  font-size: 36px;
   font-weight: 600;
 }
-// H3 ACCUEIL TABLETTE
-@mixin h3-accueil-tablette {
+// H3 ACCUEIL TABLET
+@mixin h3-tablet-accueil {
   font-size: 21px;
   font-weight: 600;
 }
-// P ACCUEIL TABLETTE
-@mixin p-accueil-tablette {
-    font-size: 20px;
+// P ACCUEIL TABLET
+@mixin p-tablet-accueil {
+  font-size: 20px;
   font-weight: 300;
+}
+
+// H2 ACCUEIL DESKTOP
+@mixin h2-desktop-accueil {
+  font-size: 40px;
+  font-weight: 600;
+}
+// H3 ACCUEIL DESKTOP
+@mixin h3-desktop-accueil {
+  font-size: 21px;
+  font-weight: 600;
+}
+// P ACCUEIL DESKTOP
+@mixin p-desktop-accueil {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+// MENU IPHONE
+// H2 MENU IPHONE
+@mixin h2-iphone-menu {
+  font-size: 28px;
+  font-weight: 600;
+}
+// H3 MENU IPHONE
+@mixin h3-iphone-menu {
+  font-size: 20px;
+  font-weight: 400;
+}
+// H4 MENU IPHONE
+@mixin h4-iphone-menu {
+  font-size: 22px;
+  font-weight: 600;
+}
+// P MENU IPHONE
+@mixin p-iphone-menu {
+  font-size: 18px;
+  font-weight: 400;
+}
+// PRICE MENU IPHONE
+@mixin price-iphone-menu {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+// H2 MENU SMARTPHONE
+@mixin h2-smartphone-menu {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+// H2 MENU TABLET
+@mixin h2-tablet-menu {
+  font-size: 36px;
+  font-weight: 600;
+}
+// H3 MENU TABLET
+@mixin h3-tablet-menu {
+  font-size: 32px;
+  font-weight: 400;
+}
+// H4 MENU TABLET
+@mixin h4-tablet-menu {
+  font-size: 32px;
+  font-weight: 500;
+}
+// P MENU TABLET
+@mixin p-tablet-menu {
+  font-size: 27px;
+  font-weight: 300;
+}
+// PRICE MENU TABLET
+@mixin price-tablet-menu {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+// H2 MENU DESKTOP
+@mixin h2-desktop-menu {
+  font-size: 40px;
+  font-weight: 600;
+}
+// H3 MENU DESKTOP
+@mixin h3-desktop-menu {
+  font-size: 28px;
+  font-weight: 400;
+}
+// H4 MENU DESKTOP
+@mixin h4-desktop-menu {
+  font-size: 30px;
+  font-weight: 500;
+}
+// P MENU DESKTOP
+@mixin p-desktop-menu {
+  font-size: 22px;
+  font-weight: 300;
+}
+// PRICE MENU DESKTOP
+@mixin price-desktop-menu {
+  font-size: 24px;
+  font-weight: 600;
 }

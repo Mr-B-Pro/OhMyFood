@@ -50,18 +50,18 @@
     &__desktop {
       display: flex;
       flex-direction: column;
-    align-items: center;
+      align-items: center;
+    }
   }
-  }  
 }
 
 // DESKTOP
 @media screen and (min-width: 1280px) {
-    .footer__h3{
-        padding: 25px 0 20px 0;
-    }
-    .footer__desktop{
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  .footer__h3 {
+    padding: 25px 0 20px 0;
+  }
+  .footer__desktop {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

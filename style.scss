@@ -1,28 +1,17 @@
+// ANIMATIONS
+@import "./Utils/animations";
+
 // MIXINS
 @import "./Utils/mixins";
 
 // VARIABLES
 @import "./Utils/variables";
 
-
-// ACCUEIL
 // BODY & WHOLE PAGE  & GOOGLE FONTS
 @import "./Base/_base";
 
-// SECTION HEADER
-@import "./Layout/Full Project/header";
+// ACCUEIL
+@import "./Pages/accueil";
 
-// SECTION ADDRESS
-@import "./Layout/Accueil/_adress";
-
-// SECTION EXPLORE
-@import "./Layout/Accueil/_explore";
-
-// SECTION FUNCTIONING
-@import "./Layout/Accueil/functioning";
-
-// SECTION CHOOSE RESTAURANTS
-@import "./Layout/Accueil/choose-restaurants";
-
-// FOOTER
-@import"./Layout/Full Project/footer";
+// RESTAURANT LA PALETTE DU GOÛT
+@import "./Pages/la-palette-du-goût";

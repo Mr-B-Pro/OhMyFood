@@ -1,27 +1,55 @@
 /* HEADER*/
 // IPHONE 8
-.Header-Title {
-    margin: 0;
-    padding: 23px 0 12px 0px;
+.Header {
+  display: flex;
+  align-items: center;
+  padding: 28px 0 12px 0px;
+
+  &__Title {
     position: relative;
-    font-family: 'Shrikhand', cursive;
-    font-size: 38px;
+    font-family: "Shrikhand", cursive;
+    font-size: 34px;
     font-weight: 500;
     text-align: center;
-    box-shadow: 0px 1px 0.5rem 0.5px #00000042;
+    margin: auto;
+  }
+}
+.backAccueil {
+  transform: translateX(22px);
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.fa-arrow-left {
+  font-size: 24px;
 }
 
 // TABLETTE
-@media screen and (min-width: 768px){
-    .Header-Title{
-        font-size: 41px;
-    } 
+@media screen and (min-width: 768px) {
+  .Header__Title {
+    font-size: 40px;
+  }
+  .backAccueil {
+    transform: translateX(32px);
+  }
+  .fa-arrow-left {
+    font-size: 30px;
+    top: 30px;
+    left: 28px;
+  }
 }
 
 // DESKTOP
-@media screen and (min-width: 1280px){
-    .Header-Title{
-        font-size: 44px;
-    } 
+@media screen and (min-width: 1280px) {
+  .Header__Title {
+    font-size: 44px;
+  }
+  .backAccueil {
+    transform: translateX(36px);
+  }
+  .fa-arrow-left {
+    font-size: 32px;
+    top: 32px;
+    left: 30px;
+  }
 }
-
