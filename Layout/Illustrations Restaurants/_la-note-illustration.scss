@@ -1,0 +1,41 @@
+// SECTION RESTAURANT ILLUSTRATION
+// IPHONE 8
+.restaurant-illustration {
+    max-width: 546px;
+    max-height: 260px;
+    overflow: hidden;
+  
+    &__imgLaNote {
+      width: 100%;
+      min-width: 370px;
+      transform: translate(0px, -25%);
+    }
+  }
+  @media screen and (min-width: 414px) {
+    .restaurant-illustration {
+      max-width: 760px;
+      max-height: 280px;
+    }
+  }
+  
+  // TABLETTE
+  @media screen and (min-width: 768px) {
+    .restaurant-illustration {
+      max-width: 1270px;
+      max-height: 500px;
+    }
+  }
+  
+  // DESKTOP
+  @media screen and (min-width: 1280px) {
+    .restaurant-illustration {
+      max-width: 1700px;
+      max-height: 850px;
+    }
+  }
+  @media screen and (min-width: 1670px) {
+    .restaurant-illustration {
+      max-width: 2000px;
+    }
+  }
+  
