@@ -4793,7 +4793,7 @@ body {
   text-align: center;
   margin: 0px;
   padding: 0px;
-  color: white;
+  color: #99e2d0;
   font-family: "Shrikhand", cursive;
 }
 
@@ -4820,7 +4820,7 @@ body {
 
 .contact-i {
   font-size: 26px;
-  color: #ff79da;
+  color: white;
 }
 
 .labelForm {
