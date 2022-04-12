@@ -1,0 +1,69 @@
+
+.mainForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.formContact{
+    background-color: $primary-color;
+    border-radius: 12px 12px;
+    @include base-shadow;
+    padding: 16px 32px;
+    margin-top: 280px;
+}
+.titleH2{
+    @include h2-iphone-accueil;
+    text-align: center;
+    margin: 0px;
+    padding: 0px; 
+    color: white;
+    font-family: "Shrikhand", cursive;
+}
+.corps-formulaire {
+    border: none;
+}
+.groupe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 26px 0 ;
+}
+.contact-i{
+    font-size: 26px;
+    color: $secondary-color;
+}
+.labelForm{
+    @include h3-iphone-accueil;
+    margin: 6px 0 12px 0; 
+    color: $tertiary-color;
+}
+
+.containerButton {
+    text-align: center;
+    margin: 50px 0 40px 0;
+}
+.button {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+    padding: 20px 30px;
+    color: white;
+    @include gradient-button;
+    border: none;
+    border-radius: 32px 32px;
+    @include base-shadow;
+    transition-duration: 250ms;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    @include base-zoom;
+  }
+
+  @media screen and (min-width: 415px){
+    .formContact{
+        margin-top: 0px;
+    }
+  }

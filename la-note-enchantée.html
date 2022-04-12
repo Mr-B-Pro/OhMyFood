@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La note echantée</title>
-      <!-- FONT AWESOME -->
-      <link
+    <!-- FONT AWESOME -->
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -19,173 +19,217 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-<body>
-      <!-- SECTION HEADER -->
-      <header class="Header">
-        <a href="index.html" class="backAccueil">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
-        <h1 class="Header__Title">ohmyfood</h1>
-      </header>
+  <body>
+    <!-- SECTION HEADER -->
+    <header class="Header">
+      <a href="index.html" class="backAccueil">
+        <i class="fa-solid fa-arrow-left"></i>
+      </a>
+      <h1 class="Header__Title">ohmyfood</h1>
+    </header>
 
     <main>
-        <!-- SECTION RESTAURANT ILLUSTRATION -->
-        <div class="restaurant-illustration">
-            <img class="restaurant-illustration__imgLaNote" src="./assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant la note enchantée">
+      <!-- SECTION RESTAURANT ILLUSTRATION -->
+      <div class="restaurant-illustration">
+        <img
+          class="restaurant-illustration__imgLaNote"
+          src="./assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+          alt="Restaurant la note enchantée"
+        />
+      </div>
+
+      <!-- SECTION RESTAURANT TITLE -->
+      <div class="restaurantTitle">
+        <h2 class="restaurantTitle__h2">La note enchantée</h2>
+        <i class="fa-regular fa-heart heartMenu transparent"></i>
+        <i class="fa-solid fa-heart heartMenu filled"></i>
+      </div>
+
+      <!-- SECTION RESTAURANT STARTERS -->
+      <section class="starters">
+        <h3 class="starters__h3">ENTRÉES</h3>
+
+        <div class="restaurantStartersContainer">
+          <article class="restaurantStarters">
+            <div class="restaurantStartersTxtContainer">
+              <h4 class="restaurantStartersTxtContainer__h4">
+                Ravioles de foie gras
+              </h4>
+              <p class="restaurantStartersTxtContainer__p">
+                Accompagnés de leur crème à la truffe
+              </p>
+            </div>
+            <p class="restaurantStarters__price">25€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="restaurantStarters">
+            <div class="restaurantStartersTxtContainer">
+              <h4 class="restaurantStartersTxtContainer__h4">
+                Caviar osciètre
+              </h4>
+              <p class="restaurantStartersTxtContainer__p">
+                Sur blini à la farine de blé noir
+              </p>
+            </div>
+            <p class="restaurantStarters__price">35€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="restaurantStarters">
+            <div class="restaurantStartersTxtContainer">
+              <h4 class="restaurantStartersTxtContainer__h4">
+                Homard et espuma de potiron
+              </h4>
+              <p class="restaurantStartersTxtContainer__p">
+                Mariné aux zestes d'orange
+              </p>
+            </div>
+            <p class="restaurantStarters__price">20€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="restaurantStarters">
+            <div class="restaurantStartersTxtContainer">
+              <h4 class="restaurantStartersTxtContainer__h4">
+                Foie gras de canard cuit entier
+              </h4>
+              <p class="restaurantStartersTxtContainer__p">
+                Confiture de figue et pain toasté
+              </p>
+            </div>
+            <p class="restaurantStarters__price">35€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
         </div>
+      </section>
 
-        <!-- SECTION RESTAURANT TITLE -->
-        <div class="restaurantTitle">
-            <h2 class="restaurantTitle__h2">La note enchantée</h2>
-            <i class="fa-regular fa-heart heartMenu transparent"></i>
-            <i class="fa-solid fa-heart heartMenu filled"></i>
+      <!-- SECTION RESTAURANT DISHES -->
+      <section class="dishes">
+        <h3 class="dishes__h3">PLATS</h3>
+
+        <div class="restaurantDishesContainer">
+          <article class="restaurantDishes">
+            <div class="restaurantDishesTxtContainer">
+              <h4 class="restaurantDishesTxtContainer__h4">
+                Noix de coquilles Saint-Jacques
+              </h4>
+              <p class="restaurantDishesTxtContainer__p">
+                Sur lit de purée de céleri-rave
+              </p>
+            </div>
+            <p class="restaurantDishes__price">40€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="restaurantDishes">
+            <div class="restaurantDishesTxtContainer">
+              <h4 class="restaurantDishesTxtContainer__h4">
+                Langoustine poêlée
+              </h4>
+              <p class="restaurantDishesTxtContainer__p">
+                Purée de patate douce
+              </p>
+            </div>
+            <p class="restaurantDishes__price">35€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="restaurantDishes">
+            <div class="restaurantDishesTxtContainer">
+              <h4 class="restaurantDishesTxtContainer__h4">
+                Mijoté de queue de boeuf
+              </h4>
+              <p class="restaurantDishesTxtContainer__p">
+                Et riz sauvage aux zestes de citron
+              </p>
+            </div>
+            <p class="restaurantDishes__price">44€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
         </div>
-        
-            <!-- SECTION RESTAURANT STARTERS -->
-            <section class="starters">
-                <h3 class="starters__h3">ENTRÉES</h3>
+      </section>
 
-                    <div class="restaurantStartersContainer">
-                        <article class="restaurantStarters">
-                            <div class="restaurantStartersTxtContainer">
-                                <h4 class="restaurantStartersTxtContainer__h4">Ravioles de foie gras</h4>
-                                <p class="restaurantStartersTxtContainer__p">Accompagnés de leur crème à la truffe</p>
-                            </div>
-                            <p class="restaurantStarters__price">25€</p>
-                            <div class="restaurant-menuAnimation">
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                        </article>
-                        <article class="restaurantStarters">
-                            <div class="restaurantStartersTxtContainer">
-                                <h4 class="restaurantStartersTxtContainer__h4">Caviar osciètre</h4>
-                                <p class="restaurantStartersTxtContainer__p">Sur blini à la farine de blé noir</p>
-                            </div>
-                            <p class="restaurantStarters__price">35€</p>
-                            <div class="restaurant-menuAnimation">
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                        </article>
-                        <article class="restaurantStarters">
-                            <div class="restaurantStartersTxtContainer">
-                                <h4 class="restaurantStartersTxtContainer__h4">Homard et espuma de potiron</h4>
-                                <p class="restaurantStartersTxtContainer__p">Mariné aux zestes d'orange</p>
-                            </div>
-                            <p class="restaurantStarters__price">20€</p>
-                            <div class="restaurant-menuAnimation">
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                        </article>
-                        <article class="restaurantStarters">
-                            <div class="restaurantStartersTxtContainer">
-                                <h4 class="restaurantStartersTxtContainer__h4">Foie gras de canard cuit entier</h4>
-                                <p class="restaurantStartersTxtContainer__p">Confiture de figue et pain toasté</p>
-                            </div>
-                            <p class="restaurantStarters__price">35€</p>
-                            <div class="restaurant-menuAnimation">
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                        </article>
-                    </div>
-                </section>             
+      <!-- SECTION RESTAURANT DESSERTS -->
+      <section class="desserts">
+        <h3 class="desserts__h3">DESSERTS</h3>
 
-             <!-- SECTION RESTAURANT DISHES -->
-             <section class="dishes">
-              <h3 class="dishes__h3">PLATS</h3>
+        <div class="restaurantDessertsContainer">
+          <article class="restaurantDesserts">
+            <div class="restaurantDessertsTxtContainer">
+              <h4 class="restaurantDessertsTxtContainer__h4">
+                Macaron noisette et chocolat
+              </h4>
+              <p class="restaurantDessertsTxtContainer__p">
+                Glace au caramel brun et sel de Guérande
+              </p>
+            </div>
+            <p class="restaurantDesserts__price">18€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="restaurantDesserts">
+            <div class="restaurantDessertsTxtContainer">
+              <h4 class="restaurantDessertsTxtContainer__h4">
+                Baba au rhum revisité
+              </h4>
+              <p class="restaurantDessertsTxtContainer__p">
+                Avec son coulis de citron
+              </p>
+            </div>
+            <p class="restaurantDesserts__price">22€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="restaurantDesserts">
+            <div class="restaurantDessertsTxtContainer">
+              <h4 class="restaurantDessertsTxtContainer__h4">
+                Tarte au citron meringuée
+              </h4>
+              <p class="restaurantDessertsTxtContainer__p">Déstructurée</p>
+            </div>
+            <p class="restaurantDesserts__price">23€</p>
+            <div class="restaurant-menuAnimation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </article>
+        </div>
+      </section>
 
-                <div class="restaurantDishesContainer">
-                    <article class="restaurantDishes">
-                        <div class="restaurantDishesTxtContainer">
-                            <h4 class="restaurantDishesTxtContainer__h4">Noix de coquilles Saint-Jacques</h4>
-                            <p class="restaurantDishesTxtContainer__p">Sur lit de purée de céleri-rave</p>
-                        </div>
-                        <p class="restaurantDishes__price">40€</p>
-                        <div class="restaurant-menuAnimation">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </article>
-                    <article class="restaurantDishes">
-                        <div class="restaurantDishesTxtContainer">
-                            <h4 class="restaurantDishesTxtContainer__h4">Langoustine poêlée</h4>
-                            <p class="restaurantDishesTxtContainer__p">Purée de patate douce</p>
-                        </div>
-                        <p class="restaurantDishes__price">35€</p>
-                        <div class="restaurant-menuAnimation">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </article>
-                    <article class="restaurantDishes">
-                        <div class="restaurantDishesTxtContainer">
-                            <h4 class="restaurantDishesTxtContainer__h4">Mijoté de queue de boeuf</h4>
-                            <p class="restaurantDishesTxtContainer__p">Et riz sauvage aux zestes de citron</p>
-                        </div>
-                        <p class="restaurantDishes__price">44€</p>
-                        <div class="restaurant-menuAnimation">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </article>
-                </div>
-            </section>
-              
-           <!-- SECTION RESTAURANT DESSERTS -->
-           <section class="desserts">
-            <h3 class="desserts__h3">DESSERTS</h3>
-
-                <div class="restaurantDessertsContainer">
-                    <article class="restaurantDesserts">
-                        <div class="restaurantDessertsTxtContainer">
-                            <h4 class="restaurantDessertsTxtContainer__h4">Macaron noisette et chocolat</h4>
-                            <p class="restaurantDessertsTxtContainer__p">Glace au caramel brun et sel de Guérande</p>
-                        </div>
-                        <p class="restaurantDesserts__price">18€</p>
-                        <div class="restaurant-menuAnimation">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </article>
-                    <article class="restaurantDesserts">
-                        <div class="restaurantDessertsTxtContainer">
-                            <h4 class="restaurantDessertsTxtContainer__h4">Baba au rhum revisité</h4>
-                            <p class="restaurantDessertsTxtContainer__p">Avec son coulis de citron</p>
-                        </div>
-                        <p class="restaurantDesserts__price">22€</p>
-                        <div class="restaurant-menuAnimation">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </article>
-                    <article class="restaurantDesserts">
-                        <div class="restaurantDessertsTxtContainer">
-                            <h4 class="restaurantDessertsTxtContainer__h4">Tarte au citron meringuée</h4>
-                            <p class="restaurantDessertsTxtContainer__p">Déstructurée</p>
-                        </div>
-                        <p class="restaurantDesserts__price">23€</p>
-                        <div class="restaurant-menuAnimation">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                    </article>
-                </div>           
-        </section>
-
-         <!-- SECTION ORDER BUTTON -->
-         <div class="buttonContainer">
-          <button class="order__button">Commander</button>
-         </div>
+      <!-- SECTION ORDER BUTTON -->
+      <div class="buttonContainer">
+        <button class="order__button">Commander</button>
+      </div>
     </main>
 
     <!-- SECTION FOOTER -->
     <footer class="footer">
-        <h3 class="footer__h3">ohmyfood</h3>
-        <div class="footer__desktop">
+      <h3 class="footer__h3">ohmyfood</h3>
+      <div class="footer__desktop">
         <div class="footer__i-p">
           <i class="fa-solid fa-utensils"></i>
-        <p class="footer__p-icons">Proposer un restaurant</p>
+          <p class="footer__p-icons">Proposer un restaurant</p>
         </div>
         <div class="footer__i-p">
           <i class="fa-solid fa-handshake-angle"></i>
-        <p class="footer__p-icons">Devenir partenaire</p>
+          <p class="footer__p-icons">Devenir partenaire</p>
         </div>
         <p class="footer__p-noIcons">Mentions légales</p>
-        <p class="footer__p-noIcons">Contact</p>
+        <a href="contact.html" target="_blank" class="contact__a">
+          <p class="footer__p-noIcons">Contact</p>
+        </a>
       </div>
-      </footer> 
-</body>
+    </footer>
+  </body>
 </html>

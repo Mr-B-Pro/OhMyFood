@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- NORMALIZE -->
+    <link rel="stylesheet" href="./Base/normalize.css" />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+<body class="bodyForm">
+
+      <!-- SECTION FORM -->
+    <main class="mainForm">
+        <form class="formContact">
+            <h2 class="titleH2">Contactez-nous</h2>
+
+            <div class="corps-formulaire">
+                <div class="gauche">
+                    <div class="groupe">
+                        <i class="fa-solid fa-user contact-i"></i>
+                        <label class="labelForm">Votre prénom</label>
+                        <input class="inputForm" type="text">
+                    </div>
+                    <div class="groupe">
+                        <i class="fa-solid fa-envelope contact-i"></i>
+                        <label class="labelForm">Votre adresse e-mail</label>
+                        <input type="text">
+                    </div>
+                    <div class="groupe">
+                        <i class="fa-solid fa-phone contact-i"></i>
+                        <label class="labelForm">Votre numéro de téléphone</label>
+                        <input type="text">
+                    </div>
+                    <div class="groupe">
+                        <i class="fa-solid fa-keyboard contact-i"></i>
+                        <label class="labelForm">Votre message</label>
+                        <textarea rows="10" cols="22" id="text"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+            <div class="containerButton">
+                <button class="button">Envoyer le message</button>
+            </div>
+    </main>
+</body>
+</html>
